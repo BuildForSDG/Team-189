@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Manage Products</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no" >
+	<link rel="stylesheet" type="text/css" href="../assets/css/manage_product.css">
+</head>
+<body>
+
+	<!-- common header -->
+	<header id="header">
+		
+	</header>
+
+	<main>
+		<!-- farmer manage their products -->
+		<div id="list-products" class="list-products">
+			<div id="grain" class="grain" product-category>
+				<h2>Grains</h2>
+				<ul id="product-details" class="product-details">
+					<li>Maize</li>
+					<li>90kg bag</li>
+					<li>ksh3,500.00</li>
+					<li><button class="edit-product">Edit</button></li>
+					<li><button class="delete-product">Delete</button></li>
+				</ul>
+			</div>
+			<div id="vegetable" class="vegetable" product-category>
+				<h2>Vegetables</h2>
+				<ul id="product-details" class="product-details">
+					<li>Spinach</li>
+					<li>90kg bag</li>
+					<li>ksh100.00</li>
+					<li><button class="edit-product">Edit</button></li>
+					<li><button class="delete-product">Delete</button></li>
+				</ul>
+				<ul id="product-details" class="product-details">
+					<li>Cabbage</li>
+					<li>90kg bag</li>
+					<li>ksh100.00</li>
+					<li><button class="edit-product">Edit</button></li>
+					<li><button class="delete-product">Delete</button></li>
+				</ul>
+			</div>
+
+			<div id="fruit" class="fruit" product-category>
+				<h2>Fruits</h2>
+				<ul id="product-details" class="product-details">
+					<li>Oranges</li>
+					<li>90kg bag</li>
+					<li>ksh1,000.00</li>
+					<li><button class="edit-product">Edit</button></li>
+					<li><button class="delete-product">Delete</button></li>
+				</ul>
+			</div>			
+		</div>
+
+		<div id="add-product" class="add-product">
+			<form id="add-product-form">
+				<h3>Add Product</h3><hr>
+				<label>Product Name</label>
+				<input type="text" name="name" placeholder="Product name">
+				<label>Description</label>
+				<input type="text" name="description" placeholder="Describe product">
+				<label>Label</label>
+				<input type="number" name="price" placeholder="Product price">
+				<input type="button" name="submit" value="SUBMIT">
+			</form>
+		</div>
+		
+	</main>
+
+	<!-- common footer -->
+	<footer id="footer">
+		
+	</footer>
+</body>
+</html>
