@@ -34,7 +34,7 @@ main {
 }
 
 #list-products {
-	width: 70%;
+	width: 50%;
 	display: grid;
 	grid-template-columns: auto;
 	grid-template-rows: repeat(3, auto);
