@@ -1,0 +1,68 @@
+@import 'add_product.css';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	background-color: #fff;
+	margin: 20px auto;
+	width: 100%;
+}
+#profile-section {
+	width: 20%;	
+	background: #f4f4f4;
+}
+#profile-section .container {
+	position: fixed;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+#profile-nav {
+	display: flex;
+	flex-direction: column; 
+}
+#profile-nav a {
+	text-decoration: none; 
+	padding: 4px;
+}
+
+#list-products {
+	width: 70%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 5px;
+}
+[product-category] {
+	padding: 16px; 
+
+}
+[product-category] h2 {
+	padding: 10px 15px;
+}
+.product-info {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	background: #f4f4f4;
+	margin: 10px 0;
+}
+#product-name{
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.product-info * {
+	padding: 5px 10px;
+}
+.product-info .edit-product,
+.product-info .delete-product {
+	padding: 2px 10px;
+	width: 10%;
+}

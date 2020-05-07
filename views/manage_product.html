@@ -14,57 +14,116 @@
 	</header>
 
 	<main>
+		<section id="profile-section">
+			<div class="container">
+
+				<!-- user's passport photo -->
+				<div id="profile-image" class="profile-image">
+					<img src="#">
+				</div>
+
+				<!-- user's name, address and contacts -->
+				<div class="profile-contacts">
+					<p>
+						Full Name
+					</p>
+					<p>
+						Address
+					</p>
+					<p>
+						Phone number
+					</p>
+				</div>
+
+				<!-- navigation within page -->
+				<nav id="profile-nav">
+					<a href="#">Grains</a>
+					<a href="#">Fruits</a>
+					<a href="#">Vegetables</a>
+				</nav>
+			</div>
+		</section>
+
 		<!-- farmer manage their products -->
-		<div id="list-products" class="list-products">
+		<section id="list-products" class="list-products">
 			<div id="grain" class="grain" product-category>
-				<h2>Grains</h2>
-				<ul id="product-details" class="product-details">
-					<li>Maize</li>
-					<li>90kg bag</li>
-					<li>ksh3,500.00</li>
-					<li><button class="edit-product">Edit</button></li>
-					<li><button class="delete-product">Delete</button></li>
-				</ul>
+				<h2>Grains</h2><hr>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Maize</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Beans</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+
+				</div>
+				
 			</div>
 			<div id="vegetable" class="vegetable" product-category>
-				<h2>Vegetables</h2>
-				<ul id="product-details" class="product-details">
-					<li>Spinach</li>
-					<li>90kg bag</li>
-					<li>ksh100.00</li>
-					<li><button class="edit-product">Edit</button></li>
-					<li><button class="delete-product">Delete</button></li>
-				</ul>
-				<ul id="product-details" class="product-details">
-					<li>Cabbage</li>
-					<li>90kg bag</li>
-					<li>ksh100.00</li>
-					<li><button class="edit-product">Edit</button></li>
-					<li><button class="delete-product">Delete</button></li>
-				</ul>
+				<h2>Vegetables</h2> <hr>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Spinach</h3>
+						<p class="product-price">ksh500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Cabbages</h3>
+						<p class="product-price">ksh500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				
 			</div>
 
 			<div id="fruit" class="fruit" product-category>
-				<h2>Fruits</h2>
-				<ul id="product-details" class="product-details">
-					<li>Oranges</li>
-					<li>90kg bag</li>
-					<li>ksh1,000.00</li>
-					<li><button class="edit-product">Edit</button></li>
-					<li><button class="delete-product">Delete</button></li>
-				</ul>
+				<h2>Fruits</h2><hr>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Oranges</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Mangoes</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
 			</div>			
-		</div>
+		</section>
 
 		<div id="add-product" class="add-product">
 			<form id="add-product-form">
 				<h3>Add Product</h3><hr>
 				<label>Product Name</label>
-				<input type="text" name="name" placeholder="Product name">
+				<input type="text" name="name" placeholder="Product name" required>
 				<label>Description</label>
-				<input type="text" name="description" placeholder="Describe product">
-				<label>Label</label>
-				<input type="number" name="price" placeholder="Product price">
+				<input type="text" name="description" placeholder="Describe product" required>
+				<label>Price</label>
+				<input type="number" name="price" placeholder="Product price" required>
 				<input type="button" name="submit" value="SUBMIT">
 			</form>
 		</div>
