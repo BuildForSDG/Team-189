@@ -1,0 +1,50 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+
+/* Custom css starts here
+    by Nicholas-Karimi */
+
+#index-banner{
+  height: 90vh;
+  background: url('../images/market-50423_1920.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .6;
+}
+
+.orange{
+  background: #3e2723 !important;
+}
+.foot{
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.andela{
+  color: coral;
+  font-size: 1.6rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-transform: lowercase;
+  
+}
+
+.text{
+  font-family: 'Times New Roman', Times, serif;
+  color: #fff;
+}
+.btn-flat{
+  color: #fff !important;
+  text-transform: capitalize;
+}
