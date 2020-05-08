@@ -21,9 +21,9 @@ input[type='button']:hover {
 	cursor: pointer;
 	background: rgba(0,0,0,0.5);
 }
-label,
+label, select,
 input {
-	padding: 10px;
+	padding: 8px;
 }
 textarea {
 	height: 80px;

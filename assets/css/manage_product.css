@@ -89,6 +89,18 @@ main {
 }
 .product-info .edit-product,
 .product-info .delete-product {
-	padding: 2px 10px;
+	padding: 4px 10px;
 	width: 10%;
+	border: none; 
+	color: #fff;
+}
+.product-info .edit-product,
+.product-info .delete-product:hover {
+	cursor: pointer;
+}
+.product-info .edit-product {
+	background: #090;
+}
+.product-info .delete-product {
+	background: #900;
 }
