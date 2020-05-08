@@ -1,29 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Farmer Registration</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Farmers Market</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+  <!-- ICONS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
 </head>
 <body>
-    <section id="landing">
-        <div></div>
-        <div>
-            <form id="registration_form">
-                <h3>Welcome to the Farmer Community</h3>
-                <input type="text" placeholder="First Name" id="first_name">
-                <input type="text" placeholder="Last Name" id="last_name">
-                <input type="email" placeholder="Email" id="email">
-                <input type="password" placeholder="Password" id="password">
-                <input type="password" placeholder="Confirm Password" id="confirm_password">
-                <button type="submit" onclick="checkPassword()">Register</button>
-                <p>Already a member? <a href="#">Login</a></p>
-            </form>
-        </div>
-    </section>
-    <script src="./assets/js/script.js"></script>
+  <nav class="grey darken-3" role="navigation">
+    <div class="nav-wrapper">
+        <a href="#index.html" class="brand-logo">Farmers Market</a>
+        <ul id="nav-mobile" class="right hide-on-med-down">
+            <li><a href="#index.html">Home</a></li>
+            <li><a href="#store.html"><i class="material-icons">add_shopping_cart</i></a></li>
+            <li><a href="registration.html">Register</a></li>
+            <li>
+                <!-- Modal Trigger -->
+          <a class="waves-effect waves-light btn-flat modal-trigger" href="#modal1">Login</a>
+          <div id="modal1" class="modal">
+            <div class="modal-content">
+              <div class="row">
+                <h4 class="black-text center">LOGIN</h4>
+                <form class="col s12" method="post" action="#">
+                  <div class="form-group">
+                    <label for="Email">Email address</label>
+                    <input type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                    <label for="Password">Password</label>
+                    <input type="password" class="form-control" name="password" id="pass" placeholder="Password">
+                    </div>
+                  <div>
+                    <a class="btn waves-effect waves-light" type="submit" name="action">Submit
+                    </a>
+                  </div>
+                  
+                </form>
+
+              </div>
+            </div>
+
+          </div>
+            </li>
+            
+        </ul>
+        
+    </div>
+
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Farmers Market Portal</h1>
+      <div class="row center">
+        <h5 class="header col s12 darken-3 text">A farmers exclusive market place to sell their farm produce directly.</h5>
+      </div>
+      <div class="row center">
+        <a href="#" id="download-button" class="btn-large waves-effect waves-darken-3 text orange">Explore</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+<!-- farmers store products will be displayed here -->
+  <!-- <div class="container">
+    <div class="section">
+
+      </div>
+  </div> -->
+
+  <footer class="page-footer orange">
     
-    
-</body>
+    <div class="footer-copyright">
+      <div class="container foot">
+      Made by #BuildforSDG <span class="andela">Team-189</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+    //   Modal trigger
+    $(document).ready(function(){
+    $('.modal').modal();
+    });
+        
+  </script>
+  </body>
 </html>
