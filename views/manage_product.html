@@ -19,27 +19,30 @@
 
 				<!-- user's passport photo -->
 				<div id="profile-image" class="profile-image">
-					<img >
+					
 				</div>
 
 				<!-- user's name, address and contacts -->
 				<div class="profile-contacts">
 					<p>
-						Full Name
+						Crop Farm
 					</p>
 					<p>
-						Address
+						P.O. Box 1, NAIROBI
 					</p>
 					<p>
-						Phone number
+						Phone: +254723693606
 					</p>
 				</div>
 
-				<!-- navigation within page -->
+				<!-- navigation within page plus logout -->
 				<nav id="profile-nav">
-					<a href="#">Grains</a>
-					<a href="#">Fruits</a>
-					<a href="#">Vegetables</a>
+					<a href="#grain">Grains</a>
+					<a href="#fruit">Fruits</a>
+					<a href="#vegetable">Vegetables</a>
+					<a href="#add-product">Add Product</a>
+					<a href="#">Edit Profile</a>
+					<a href="#">Log Out</a>
 				</nav>
 			</div>
 		</section>
@@ -120,10 +123,10 @@
 				<h3>Add Product</h3><hr>
 				<label>Product Name</label>
 				<input type="text" name="name" placeholder="Product name" required>
-				<label>Description</label>
-				<input type="text" name="description" placeholder="Describe product" required>
 				<label>Price</label>
 				<input type="number" name="price" placeholder="Product price" required>
+				<label>Description</label>
+				<textarea name="description" placeholder="Describe product" required></textarea>
 				<input type="button" name="submit" value="SUBMIT">
 			</form>
 		</div>

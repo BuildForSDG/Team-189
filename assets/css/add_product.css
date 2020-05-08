@@ -3,7 +3,8 @@
 	width: 25%;
 	right: 50px;
 	top: 100px;
-	background: rgba(167,167,167,0.5);
+	background: rgba(244,244,244,0.5);
+	box-shadow: 2px 4px 8px #000;
 }
 #add-product > form {
 	display: flex;
@@ -22,5 +23,9 @@ input[type='button']:hover {
 }
 label,
 input {
+	padding: 10px;
+}
+textarea {
+	height: 80px;
 	padding: 10px;
 }
