@@ -29,3 +29,15 @@ textarea {
 	height: 80px;
 	padding: 10px;
 }
+
+/*media queries*/
+@media screen and (max-width: 768px) {
+	#add-product {
+		position: relative;
+		z-index: 0;
+		width: 95%;
+		bottom: 100px;
+		right: auto;
+		margin: 0 auto;
+	}
+}
