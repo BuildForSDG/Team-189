@@ -111,6 +111,12 @@ main {
 .icon-menu {
 	display: none;
 }
+#footer {
+	min-height: 100px;
+	margin-top: 50px;
+	width: 100%;
+	background-color: #333;
+}
 
 /*media queries*/
 @media screen and (max-width: 768px) {
