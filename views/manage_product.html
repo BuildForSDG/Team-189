@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Manage Products</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1 shrink-to-fit=no" >
+	<link rel="stylesheet" type="text/css" href="../assets/css/manage_product.css">
+</head>
+<body>
+
+	<!-- common header -->
+	<header id="header">
+		
+	</header>
+
+	<main>
+		<section id="profile-section">
+			<div class="container">
+
+				<!-- user's passport photo -->
+				<div id="profile-image" class="profile-image">
+					
+				</div>
+
+				<!-- user's name, address and contacts -->
+				<div class="profile-contacts">
+					<p>
+						Crop Farm
+					</p>
+					<p>
+						P.O. Box x - 00100, NAIROBI
+					</p>
+					<p>
+						Phone: +254723xxxxxx
+					</p>
+				</div>
+
+				<!-- navigation within page plus logout -->
+				<nav id="profile-nav">
+					<a href="#" class="close-menu">&times;</a>
+					<a href="#grain" class="profile-nav-link">Grains</a>
+					<a href="#fruit" class="profile-nav-link">Fruits</a>
+					<a href="#vegetable" class="profile-nav-link">Vegetables</a>
+					<a href="#dairy" class="profile-nav-link">Dairy</a>
+					<a href="#poultry" class="profile-nav-link">Poultry</a>
+					<a href="#add-product" class="profile-nav-link">Add Product</a>
+					<a href="#" class="profile-nav-link">Edit Profile</a>
+					<a href="#" class="profile-nav-link">Log Out</a>
+				</nav>
+				<div class="icon-menu" id="icon-menu">Menu &#9776;</div>
+			</div>
+		</section>
+
+		<!-- farmer manage their products -->
+		<section id="list-products" class="list-products">
+			<div id="grain" class="grain" product-category>
+				<h2>Grains</h2><hr>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Maize</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Beans</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+
+				</div>
+				
+			</div>
+			<div id="vegetable" class="vegetable" product-category>
+				<h2>Vegetables</h2> <hr>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Spinach</h3>
+						<p class="product-price">ksh500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Cabbages</h3>
+						<p class="product-price">ksh500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				
+			</div>
+
+			<div id="fruit" class="fruit" product-category>
+				<h2>Fruits</h2><hr>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Oranges</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+				<div id="product-info" class="product-info">
+					<div>
+						<h3 class="product-name">Mangoes</h3>
+						<p class="product-price">ksh3,500.00</p>
+						<p class="product-description">Description ... 90kg bag ....</p>
+						<button class="edit-product">Edit</button>
+						<button class="delete-product">Delete</button>
+					</div>
+				</div>
+			</div>			
+		</section>
+
+		<div id="add-product" class="add-product">
+			<form id="add-product-form">
+				<h3>Add Product</h3><hr>
+				<label>Product Name</label>
+				<input type="text" name="name" placeholder="Product name" required>
+				<label>Product Category</label>
+				<select id="dropdown">
+					<option>Grains</option>
+					<option>Fruits</option>
+					<option>Vegetables</option>
+					<option>Dairy</option>
+					<option>Poultry</option>
+				</select>
+				<label>Price</label>
+				<input type="number" name="price" placeholder="Product price" required>
+				<label>Description</label>
+				<textarea name="description" placeholder="Describe product" required></textarea>
+				<input type="button" name="submit" value="SUBMIT">
+			</form>
+		</div>
+		
+	</main>
+
+	<!-- common footer -->
+	<footer id="footer">
+		
+	</footer>
+
+	<!-- javascript -->
+	<script src="../assets/js/toggle_nav.js">
+		
+	</script>
+</body>
+</html>
