@@ -17,6 +17,8 @@ function closeNav() {
 	var show_icon_menu = document.getElementById("icon-menu");
 	show_icon_menu.style.display = "flex";
 }
+
+/** Toggle on click event **/
 document.querySelector(".icon-menu").addEventListener("click", openNav);
 document.querySelector(".close-menu").addEventListener("click", closeNav);
 
