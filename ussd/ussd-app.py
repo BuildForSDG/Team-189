@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 username = "sandbox"
-api_key = ""
+api_key = "acf6afa94b14298fcb067238ca5f99b8ecbc3d8df64f925ad9cf348663f3b84a"
 
 africastalking.initialize(username, api_key)
 sms = africastalking.SMS
@@ -71,8 +71,8 @@ def ussd_callback():
 
 			#send sms with the number to call for extension service
 			#send sms to extension officer from farmer seeking services
-			sms_response_farmer = sms.send("Call this number: {}".format(phone_number)."Thank you for using this service.", sms_phone_number)
-			sms_response_extension_officer = sms.send("Farmer seek your services: {}".format(phone_number)."Thank you for using this service.", sms_phone_number)
+			sms_response_farmer = sms.send("Call this number: {}".format(phone_number) + "Thank you for using this service.", sms_phone_number)
+			sms_response_extension_officer = sms.send("Farmer seek your services: {}".format(phone_number) + "Thank you for using this service.", sms_phone_number)
 			print(sms_response_farmer)
 			print(sms_response_extension_officer)
 
@@ -91,11 +91,11 @@ def ussd_callback():
 		selling_price_sorgham = "ksh5500.00 per 90kg bag"
 
 		response = "CON Choose Grains to buy:\n"
-		response += "1. Wheat @ {}".format(selling_price_wheat)."\n"
-		response += "2. Beans @ {}".format(selling_price_beans)."\n"
-		response += "3. Maize @ {}".format(selling_price_maize)."\n"
-		response += "4. Millet @ {}".format(selling_price_millet)."\n"
-		response += "5. Sorgham @ {}".format(selling_price_sorgham)."\n"
+		response += "1. Wheat @ {}".format(selling_price_wheat) + "\n"
+		response += "2. Beans @ {}".format(selling_price_beans) + "\n"
+		response += "3. Maize @ {}".format(selling_price_maize) + "\n"
+		response += "4. Millet @ {}".format(selling_price_millet) + "\n"
+		response += "5. Sorgham @ {}".format(selling_price_sorgham) + "\n"
 
 	elif text == "1*2":
 		#sub-menu 1 sub-menu 2 -> buy fruits
@@ -108,11 +108,11 @@ def ussd_callback():
 		selling_price_avocado = "ksh200.00 - dozen"
 
 		response = "CON Choose Fruits to buy:\n"
-		response += "1. Bananas @ {}".format(selling_price_bananas)."\n"
-		response += "2. Oranges @ {}".format(selling_price_oranges)."\n"
-		response += "3. Mangoes @ {}".format(selling_price_mangoes)."\n"
-		response += "4. Watermelon @ {}".format(selling_price_watermelon)."\n"
-		response += "5. Avocado @ {}".format(selling_price_avocado)."\n"
+		response += "1. Bananas @ {}".format(selling_price_bananas) + "\n"
+		response += "2. Oranges @ {}".format(selling_price_oranges) + "\n"
+		response += "3. Mangoes @ {}".format(selling_price_mangoes) + "\n"
+		response += "4. Watermelon @ {}".format(selling_price_watermelon) + "\n"
+		response += "5. Avocado @ {}".format(selling_price_avocado) + "\n"
 
 	elif text == "1*3":
 		#sub-menu 1 sub-menu 3 -> buy vegetables
@@ -125,11 +125,11 @@ def ussd_callback():
 		selling_price_bulb_onions = "ksh1200.00 - crate"
 
 		response = "CON Choose Vegetables to buy:\n"
-		response += "1. Spinach @ {}".format(selling_price_spinach)."\n"
-		response += "2. Kales @ {}".format(selling_price_kales)."\n"
-		response += "3. Tomatoes @ {}".format(selling_price_tomatoes)."\n"
-		response += "4. Cabbages @ {}".format(selling_price_cabbages)."\n"
-		response += "5. Bulb Onions @ {}".format(selling_price_bulb_onions)."\n"
+		response += "1. Spinach @ {}".format(selling_price_spinach) + "\n"
+		response += "2. Kales @ {}".format(selling_price_kales) + "\n"
+		response += "3. Tomatoes @ {}".format(selling_price_tomatoes) + "\n"
+		response += "4. Cabbages @ {}".format(selling_price_cabbages) + "\n"
+		response += "5. Bulb Onions @ {}".format(selling_price_bulb_onions) + "\n"
 
 	elif text == "1*4":
 		#sub-menu 1 sub-menu 4 -> buy poultry products
@@ -139,8 +139,8 @@ def ussd_callback():
 		selling_price_broilers = "ksh500.00 - 1 chicken"
 
 		response = "CON Choose chicken product to buy:\n"
-		response += "1. Eggs @ {}".format(selling_price_eggs)."\n"
-		response += "2. Broillers @ {}".format(selling_price_broilers)."\n"
+		response += "1. Eggs @ {}".format(selling_price_eggs) + "\n"
+		response += "2. Broillers @ {}".format(selling_price_broilers) + "\n"
 
 	elif text == "1*5":
 		#sub-menu 1 sub-menu 5 -> buy dairy products
@@ -150,8 +150,8 @@ def ussd_callback():
 		selling_price_goat_milk = "ksh40.00 - litre"
 
 		response = "CON Choose Dairy product to buy:\n"
-		response += "1. Cow Milk @ {}".format(selling_price_cow_milk)."\n"
-		response += "2. Goat Milk @ {}".format(selling_price_goat_milk)."\n"
+		response += "1. Cow Milk @ {}".format(selling_price_cow_milk) + "\n"
+		response += "2. Goat Milk @ {}".format(selling_price_goat_milk) + "\n"
 
 
 
