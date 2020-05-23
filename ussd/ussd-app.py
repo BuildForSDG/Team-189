@@ -29,6 +29,7 @@ def ussd_callback():
 		response += "2. Sell farm produce\n"
 		response += "3. Learn professional farming\n"
 		response += "4. Seek agricultural/extension services\n"
+		response += "5. Exit\n"
 
 	elif text == "1":
 		#print sub-menu 1
@@ -38,6 +39,7 @@ def ussd_callback():
 		response += "3. Vegetables\n"
 		response += "4. Poultry products\n"
 		response += "5. Dairy products\n"
+		response += "6. <= Back\n"
 
 	elif text == "2": 
 		#print sub-menu 1
@@ -47,15 +49,18 @@ def ussd_callback():
 		response += "3. Vegetables\n"
 		response += "4. Poultry products\n"
 		response += "5. Dairy products\n"
+		response += "6. <= Back\n"
 
 	elif text == "3": 
 		#print sub-menu 1
 		response = "CON What would you like to learn?\n"
 		response += "1. How to cultivate Beans\n"
 		response += "2. How to cultivate Maize\n"
-		response += "3. How to cultivate Wheat"
+		response += "3. How to cultivate Wheat\n"
 		response += "4. How to cultivate Tomatoes\n"
 		response += "5. How to cultivate Vegetables\n"
+		response += "100. HOME\n"
+		response += "300. MORE\n"
 		response += "6. How to cultivate Bananas\n"
 		response += "7. How to cultivate Avocado\n"
 		response += "8. How to cultivate Mangoes\n"
@@ -64,15 +69,17 @@ def ussd_callback():
 		response += "11. Poultry keeping\n"
 		response += "12. Dairy farming\n"
 		response += "13. Bee keeping\n"
-		response += "14. Pig farming"
+		response += "14. Pig farming\n"
 
 	elif text == "4":
 		try:
 
 			#send sms with the number to call for extension service
 			#send sms to extension officer from farmer seeking services
-			sms_response_farmer = sms.send("Call this number: {}".format(phone_number) + "Thank you for using this service.", sms_phone_number)
-			sms_response_extension_officer = sms.send("Farmer seek your services: {}".format(phone_number) + "Thank you for using this service.", sms_phone_number)
+			sms_response_farmer = sms.send("Call this number: {}".format(phone_number) 
+				+ "Thank you for using this service.", sms_phone_number)
+			sms_response_extension_officer = sms.send("Farmer seek your services: {}".format(phone_number) 
+				+ "Thank you for using this service.", sms_phone_number)
 			print(sms_response_farmer)
 			print(sms_response_extension_officer)
 
@@ -153,6 +160,47 @@ def ussd_callback():
 		response += "1. Cow Milk @ {}".format(selling_price_cow_milk) + "\n"
 		response += "2. Goat Milk @ {}".format(selling_price_goat_milk) + "\n"
 
+	#Start sub-menu 2 options
+	elif text == "2*1":
+		pass
+
+	elif text == "2*2":
+		pass
+
+	elif text == "2*3":
+		pass
+
+	elif text == "2*4":
+		pass	
+
+	elif text == "2*5":
+		pass
+
+	elif text == "2*6":
+		pass
+
+
+	#Start sub-menu 3 options
+	elif text == "3*1":
+		pass
+
+	elif text == "3*2":
+		pass
+
+	elif text == "3*3":
+		pass
+
+	elif text == "3*4":
+		pass	
+
+	elif text == "3*5":
+		pass
+
+	elif text == "3*100":
+		pass
+
+	elif text == "3*300":
+		pass
 
 
 	else:
@@ -161,5 +209,5 @@ def ussd_callback():
 	return response
 
 if __name__ == "__main__":
-	app.run(host="0.0.0.0", port=os.environ.get("PORT"))
+	app.run(host="0.0.0.0", port=os.environ.get("PORT"), DEBUG=True)
 
